@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+            html {
+                overflow: scroll;
+                overflow-x: hidden;
+            }
+            ::-webkit-scrollbar {
+                width: 0;
+                background: transparent;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #FF0000;
+            }
+            #vbg {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            a {
+                text-decoration: none;
+            }
+			header {
+				display: flex;
+				justify-content: center;
+				padding: 10px;
+			}
+			.navbar {
+				padding: 25px;
+			}
+			.navbar a {
+				padding: 0 100px 0 100px;
+				color: whitesmoke;
+			}
+            .navbar a:hover {
+                color: aqua;
+            }
+            .con{
+                border: 2px solid #fff;
+				margin: 0 100px 50px 100px;
+                background: rgba(0,0,0,0.8);
+            }
+			.container {
+				padding: 0 50px 0 50px;
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+				justify-content: center;
+			}
+            @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            .con {
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                }
+            }
+			.box {
+				margin: auto;
+                padding: 0 5px 0 5px;
+                justify-content: center;
+                color: #fff;
+			}
+            img {
+                width: 150px;
+            }
+            .text {
+                text-align: center;
+                padding: 5px;
+                color: aqua;
+            }
+            .text1 {
+                text-align: left;
+            }
+            .text2 {
+                margin: 0 50px 0 50px;
+            }
+            .text3 {
+                margin: 0;
+            }
+            .text4 {
+                text-align: center;
+            }
+            .brd {
+                border-bottom: 4px double #ffffff;
+                margin: 0 50px 15px 50px;
+            }
+            .brd1 {
+                border-top: 2px solid #ffffff;
+                border-left: 2px solid #ffffff;
+                border-right: 2px solid #ffffff;
+                border-bottom: 4px double #ffffff;
+                margin: 15px 50px 0 50px;
+            }
+            .brd2 {
+                border-bottom: 2px solid #ffffff;
+                border-left: 2px solid #ffffff;
+                border-right: 2px solid #ffffff;
+                margin: 0 50px 0 50px;
+            }
+            .ul {
+                text-decoration: underline;
+                margin: 15px 50px 15px 50px;
+                color: aqua;
+            }
+            .tab {
+                display: inline-flex;
+            }
+            input[type=radio] {
+                padding: 0.5em;
+                -webkit-appearance: none;
+                outline: 0.1em solid rgb(255, 255, 255);
+                outline-offset: 0.1em;
+            }
+            input[type=radio]:checked {
+                display: inline-block;
+                background-color: aqua;
+            }
+            input[type=text], input[type=number], input[type=email]{
+                outline: 0;
+                width: 225px;
+                border-width: 0 0 2px;
+                border-color: white;
+                background: transparent;
+                color: #fff;
+                font-size: large;
+            }
+            input:focus {
+                border-color: aqua;
+                outline: 0;
+            }
+            h3, label {
+                margin-right: 10px;
+            }
+            label {
+                margin-top: 3px;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="">FORM</a>
+            <a href="reg.html">REGISTRATION</a>
+        </nav>
+    </header>
+    <div class="con">
+
+    <div class="brd">
+    <div class="container">
+        <div class="box">
+            <div class="img">
+                <img src="media/logo.png">
+            </div>
+        </div>
+        <div class="box">
+            <div class="text4">
+                <h2>St. Louis College Valenzuela</h2>
+                <p>#005 Maysan Road, Valenzuela City, Metro Manila, Philippines 1440</p>
+                <p>Tel. Nos. 292-0481; E-mail: slcv@vasia.com; FB page: slvcollege</p>
+                <h2>COLLEGE DEPARTMENT</h2>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <div class="text">
+                <h1>APPLICATION FOR ADMISSION</h1></div>
+            <div class="text4">
+                <h3>S. Y. 2024 - 2025</h3><br></div>
+        </div>
+    </div>
+
+    <div class="text2">
+        <div class="box">
+            <div class="text1">
+                <div class="tab"><h3>Last Name:</h3><input type="text" /><h3>First Name:</h3><input type="text" /><h3>Middle Name:</h3><input type="text" /></div>
+                <div class="tab"><h3>Application Status:</h3>
+                    <label for="asA"><input type="radio" name="as" value="FirstYear"/> Incoming First Year</label>
+                    <label for="asB"><input type="radio" name="as" value="Transferee"/> Transferee</label></div>
+                <h3>Course Applied For:</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <div class="text">
+                <h2 class="ul">BACHELOR's DEGREE (4 YEARS)</h2></div>
+            <div class="text1">
+                <label for="bdA"><input type="radio" name="bd" value="BSAIS"/> Bachelor of Science in Accounting Information System (BSAIS)</label><br>
+                <label for="bdB"><input type="radio" name="bd" value="BSBA-FM"/> Bachelor of Science in Business Administration - Major in Financial Management (BSBA-FM)</label><br>
+                <label for="bdC"><input type="radio" name="bd" value="BSBA-HRM"/> Bachelor of Science in Business Administration - Major in Human Resource Management (BSBA-HRM)</label><br>
+                <label for="bdD"><input type="radio" name="bd" value="BSBA-MM"/> Bachelor of Science in Business Administration - Major in Marketing Management (BSBA-MM)</label><br>
+                <label for="bdE"><input type="radio" name="bd" value="BSCS"/> Bachelor of Science in Computer Science (BSCS)</label><br>
+                <label for="bdF"><input type="radio" name="bd" value="BSHM"/> Bachelor of Science in Hospitality Management (BSHM)</label><br>
+                <label for="bdG"><input type="radio" name="bd" value="BSOA"/> Bachelor of Science in Office Administration (BSOA)</label><br>
+                <label for="bdH"><input type="radio" name="bd" value="BECEd"/> Bachelor of Early Childhood Education (BECEd)</label><br>
+                <label for="bdI"><input type="radio" name="bd" value="BTVTEd-HRs"/> Bachelor of Technical-Vocational Teacher Education Major in Hotel & Restaurant Services (BTVTEd-HRs)</label><br>
+                <label for="bdJ"><input type="radio" name="bd" value="BTVTEd-CPG"/> Bachelor of Technical-Vocational Teacher Education Major in Computer Programming (BTVTEd-CPG)</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <div class="text">
+                <h2 class="ul">ASSOCIATE PROGRAM (2 YEARS)</h2></div>
+            <div class="text1">
+                <label for="apA"><input type="radio" name="ap" value="Ladderized_to_BSCS"/> Associate in Computer Technology (Ladderized to BSCS)</label><br>
+                <label for="apB"><input type="radio" name="ap" value="Caregiving"/> Associate in Health Services (Caregiving)</label>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="brd1">
+        <div class="container">
+            <div class="box">
+                <div class="text">
+                    <h3>ACADEMIC INFORMATION</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brd2">
+        <div class="container">
+        <div class="text3">
+            <div class="box">
+                <div class="text1"><br>
+                    <p>Last High School Attended</p>
+                    <div class="tab"><h3>School Name:</h3><input type="text" /></div><br>
+                    <div class="tab"><h3>School Year:</h3><input type="number" placeholder="YYYY" min="2000" max="2024">-<input type="number" placeholder="YYYY" min="2001" max="2025"></div><br>
+                    <div class="tab"><h3>School Address:</h3><input type="text" /></div><br>
+                    <div class="tab"><h3>Senior High School Track:</h3><input type="text" /></div>
+                    <div class="tab"><h3>Honors Received during Graduation <i>(if any)</i>:</h3><input type="text" /></div><br><br>
+                    <div class="tab"><h3>College/University <i>(if transferee)</i>:</h3><input type="text" /></div><br>
+                    <div class="tab"><h3>Course:</h3><input type="text" /></div><br>
+                    <div class="tab"><h3>School Year & Semester:</h3><input type="text" /></div>
+                </div>
+                <br>
+            </div>
+        </div></div>
+    </div>
+
+    <div class="brd1">
+        <div class="container">
+            <div class="box">
+                <div class="text">
+                    <h3>PERSONAL INFORMATION</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brd2">
+        <div class="container">
+            <div class="box">
+                <div class="text1">
+                    <div class="tab"><h3>Present Address:</h3><input type="text" /></div><br>
+                    <div class="tab"><h3>Contact Number:</h3><input type="number" /></div>
+                    <div class="tab"><h3>Date of Birth:</h3><input type="date" /></div>
+                    <div class="tab"><h3>Religion:</h3><input type="text" /></div><br>
+
+                    <div class="tab"><h3>Civil Status:</h3>
+                        <select id="civsta">
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                            <option value="Divorced">Divorced</option>
+                            <option value="Widowed">Widowed</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="text1"><br>
+                    <div class="tab"><h3>Gender:</h3>
+                        <select id="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div><br>
+                    <div class="tab"><h3>E-mail:</h3><input type="text" /></div><br>
+                    <div class="tab"><h3>Place of Birth:</h3><input type="text" /></div>
+                    <div class="tab"><h3>Nationality:</h3><input type="text" /></div><br>
+                    <div class="tab"><h3>Occupation:</h3>
+                        <select id="occ">
+                            <option value="None">None</option>
+                            <option value="Part-time">Part-time</option>
+                            <option value="Full-time">Full-time</option>
+                        </select>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <div class="brd1">
+        <div class="container">
+            <div class="box">
+                <div class="text">
+                    <h4>Documents Submitted:</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brd2">
+        <div class="container">
+            <div class="box">
+                <div class="text1">
+                    <div class="tab"><label for="dsA"><input type="checkbox" name="ds" value="FORM138/137"/> High School Report Card (Form 138/137)</label></div>
+                    <div class="tab"><label for="dsB"><input type="checkbox" name="ds" value="TOR/COG"/> Transcript of Record/Certificate of Grades</label></div><br>
+                    <div class="tab"><label for="dsC"><input type="checkbox" name="ds" value="COGMC"/> Certificate of Good Moral Character</label></div><br>
+                    <div class="tab"><label for="dsD"><input type="checkbox" name="ds" value="HOD"/> Honorable Dismissal</label></div><br>
+                </div>
+            </div>
+            <div class="box">
+                <div class="text1"><br>
+                    <div class="tab"><label for="dsA"><input type="checkbox" name="ds" value="FORM138/137"/> Certificate of Honor</label></div><br>
+                    <div class="tab"><label for="dsB"><input type="checkbox" name="ds" value="TOR/COG"/> Copy of Birth Certificate</label></div><br>
+                    <div class="tab"><label for="dsC"><input type="checkbox" name="ds" value="COGMC"/> X-ray Report/Medical Certificate</label></div>
+                    <div class="tab"><label for="dsD"><input type="checkbox" name="ds" value="HOD"/> 2 pcs. 2x2 colored photo with white background</label></div><br><br>
+                </div>
+            </div>
+        </div>
+        </div>
+    <br><br>
+
+    </div>
+	<video id="vbg" autoplay loop muted poster="">
+		<source src="media/vbg.mp4" type="video/mp4">
+	</video>
+    <script>
+        document.querySelector("input[type=number]")
+        .oninput = e => console.log(new Date(e.target.valueAsNumber, 0, 1))
+    </script>
+</body>
+</html>

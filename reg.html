@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+            html {
+                overflow: scroll;
+                overflow-x: hidden;
+            }
+            ::-webkit-scrollbar {
+                width: 0;
+                background: transparent;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #FF0000;
+            }
+            #vbg {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            a {
+                text-decoration: none;
+            }
+			header {
+				display: flex;
+				justify-content: center;
+				padding: 10px;
+			}
+			.navbar {
+				padding: 25px;
+			}
+			.navbar a {
+				padding: 0 100px 0 100px;
+				color: whitesmoke;
+			}
+            .navbar a:hover {
+                color: aqua;
+            }
+            .con{
+                border: 2px solid #fff;
+				margin: 0 100px 50px 100px;
+                background: rgba(0,0,0,0.8);
+            }
+			.container {
+				padding: 0 50px 0 50px;
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+				justify-content: center;
+			}
+            @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            .con {
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                }
+            }
+			.box {
+				margin: auto;
+                padding: 0 5px 0 5px;
+                justify-content: center;
+                color: #fff;
+			}
+            .img {
+                filter: grayscale();
+            }
+            .text {
+                text-align: center;
+                color: aqua;
+            }
+            .text1 {
+                text-align: left;
+            }
+            .text2 {
+                text-align: center;
+            }
+            .text3 {
+                text-align: right;
+            }
+            .brd {
+                border-bottom: 4px double #ffffff;
+                margin: 0 50px 15px 50px;
+            }
+            .brd1 {
+                margin: 15px 50px 0 50px;
+            }
+            .tab {
+                display: inline-flex;
+            }
+            input[type=radio] {
+                padding: 0.5em;
+                -webkit-appearance: none;
+                outline: 0.1em solid rgb(255, 255, 255);
+                outline-offset: 0.1em;
+            }
+            input[type=radio]:checked {
+                display: inline-block;
+                background-color: aqua;
+            }
+            input[type=text], input[type=number], input[type=email]{
+                outline: 0;
+                width: 225px;
+                border-width: 0 0 2px;
+                border-color: white;
+                background: transparent;
+                color: #fff;
+                font-size: large;
+            }
+            input:focus {
+                border-color: aqua;
+                outline: 0;
+            }
+            h3, label {
+                margin-right: 10px;
+            }
+            label {
+                margin-top: 3px;
+            }
+            .ple {
+                border: 2px dashed white;
+                text-align: center;
+                padding: 25px 100px 25px 100px;
+            }
+            .ple p {
+                text-align: justify;
+                text-justify: inter-word;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">FORM</a>
+            <a href="reg.html">REGISTRATION</a>
+        </nav>
+    </header>
+    <div class="con">
+
+        <div class="brd">
+            <div class="container">
+                <div class="box">
+                        <img src="media/logo.png" style="width: 150px;">
+                </div>
+                <div class="box">
+                    <div class="text2">
+                        <h2>St. Louis College Valenzuela</h2>
+                        <p>#005 Maysan Road, Valenzuela City, Metro Manila, Philippines 1440</p>
+                        <p>Tel. Nos. 292-0481; E-mail: slcv@vasia.com; FB page: slvcollege</p>
+                        <h2>COLLEGE DEPARTMENT</h2>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+    <div class="brd">
+    <div class="container">
+        <div class="box">
+            <div class="text"><br>
+                <h2>REGISTRATION PROCEDURE</h2><br>
+            </div>
+                <div class="text1">
+                <p>1. Present your credentials to the Dean/Registrar thru, the Office of the Registrar.</p>
+                <p>2. Secure Registration Card from the Registrar's Office and fill it up completely. No
+                    change should be made in the subjects without prior approval of the Dean/Registrar.
+                </p>
+                <p>3. Go to the Accounting Department for assessment.</p>
+                <p>4. Pay your fees at the Cashier's Window.</p>
+                <p>5. Present your registration card at the Registrar's Office for confirmation of enrolled status.</p>
+                <div class="img">
+                <img src="media/logo.png"></div><p>www.slcv.edu.ph</p><br>
+                </div>
+        </div>
+        <div class="box">
+            <div class="text"><br>
+                <h2>REGISTRATION RULES</h2><br>
+            </div>
+                <div class="text1">
+                <p>1.Changes in subjects, dropping of subjects, and enrollment in additional subjects must be accomplished
+                    before the deadline, on a separate form called "dropping/changing form".
+                </p>
+                <p>2. Cancellation of registration must be accomplished on the prescribed form and must have the approval
+                    of the Dean/Registrar.
+                </p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <div class="text">
+                <h2>STUDENT'S INFORMATION CARD</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="brd">
+    <div class="text2">
+        <div class="box">
+            <div class="text1"><br>
+                <div class="tab"><h3>Last Name:</h3><input type="text" /><h3>First Name:</h3><input type="text" /><h3>Middle Name:</h3><input type="text" /></div>
+                <div class="tab"><h3>Sex:</h3><input type="text" /></div>
+                <div class="tab"><h3>Civil Status:</h3><input type="text" /></div>
+                <div class="tab"><h3>Nationality:</h3><input type="text" /></div>
+                <div class="tab"><h3>Religion:</h3><input type="text" /></div>
+                <div class="tab"><h3>Contact Number:</h3><input type="text" /></div><br>
+                <div class="tab"><h3>Age:</h3><input type="text" /></div>
+                <div class="tab"><h3>Date of Birth:</h3><input type="date" /></div>
+                <div class="tab"><h3>Place of Birth:</h3><input type="text" /></div><br>
+                <div class="tab"><h3>City Address:</h3><input type="text" /></div><br>
+                <div class="tab"><h3>Provincial Address:</h3><input type="text" /></div><br><br>
+
+                <div class="tab"><h3>Father's Name:</h3><input type="text" /></div>
+                <div class="tab"><h3>Occupation:</h3><input type="text" /></div><br>
+                <div class="tab"><h3>Mother's Name:</h3><input type="text" /></div>
+                <div class="tab"><h3>Occupation:</h3><input type="text" /></div><br>
+
+                <div class="tab"><h3>EMERGENCY 24/7 PARENT'S NUMBER:</h3><input type="number" /></div><br>
+                <div class="tab"><h3>Tuition paid by:</h3>
+                    <label for="tpA"><input type="radio" name="tp" value="Student"/> Student</label>
+                    <label for="tpB"><input type="radio" name="tp" value="Parent"/> Transferee</label>
+                    <label for="tpC"><input type="radio" name="tp" value="Sponsor"/> Sponsor</label><input type="text" /></div><br><br>
+
+                    <div class="tab"><h3>Elementary Course Completed at:</h3><input type="text" /></div>
+                    <div class="tab"><h3>Year Graduated:</h3><input type="number" placeholder="YYYY" min="2000" max="2025"></div><br>
+                    <div class="tab"><h3>Junior High School Completed at:</h3><input type="text" /></div>
+                    <div class="tab"><h3>Year Graduated:</h3><input type="number" placeholder="YYYY" min="2000" max="2025"></div><br>
+                    <div class="tab"><h3>Senior High School Completed at:</h3><input type="text" /></div>
+                    <div class="tab"><h3>Year Graduated:</h3><input type="number" placeholder="YYYY" min="2000" max="2025"></div><br>
+                    <div class="tab"><h3>School Last attended <i>(if Transferee)</i>:</h3><input type="text" /></div>
+                    <div class="tab"><h3>Year:</h3><input type="number" placeholder="YYYY" min="2000" max="2025"></div><br><br>
+
+                    <div class="text1">
+                        <h3>Credential Submitted: (Pls. Check only)</h3>
+                        <label for="bdA"><input type="checkbox" name="bd" value="BSAIS"/> Honorable Dismissal</label><br>
+                        <label for="bdB"><input type="checkbox" name="bd" value="BSBA-FM"/> Transcript of Records</label><br>
+                        <label for="bdC"><input type="checkbox" name="bd" value="BSBA-HRM"/> ACR No.<input type="number" /></label><br>
+                        <label for="bdD"><input type="checkbox" name="bd" value="BSBA-MM"/> Recognition/Naturalization Paper</label><br>
+                        <label for="bdE"><input type="checkbox" name="bd" value="BSCS"/> Study-Permit</label><br><br>
+                    </div>
+                    <div class="ple">
+                        <h3>PLEDGE</h3><br>
+                        <p>I shall abide by the registration rules printed on the Student's Copy of this registration card,
+                            to pay my tuition and other fees, and to comply with all existing rules and regulations of ST.
+                            LOUIS COLLEGE <i><b>VALENZUELA</b></i> and those that may be promulgated and/or amended from
+                            time to time.
+                        </p>
+                        <br>
+                        <div class="text3">
+                        <input type="text" /></div>
+                        <p style="text-align: right; padding-top: 3px;"><i>Student's Signature</i></p>
+                    </div>
+                </div>
+        </div>
+    </div><br>
+    </div>
+
+    </div>
+	<video id="vbg" autoplay loop muted poster="">
+		<source src="media/vbg.mp4" type="video/mp4">
+	</video>
+</body>
+</html>
