@@ -141,6 +141,17 @@
             table, th, td {
                 border:1px solid rgb(61, 61, 61);
             }
+            input[type=submit],input[type=button] {
+                padding: 10px 50px 10px 50px;
+                font-size: medium;
+                font-weight: bold;
+            }
+            input[type=submit]:hover ,input[type=button]:hover {
+                background: aqua;
+            }
+            .but {
+                margin-top: 15px;
+            }
     </style>
 </head>
 <body>
@@ -152,6 +163,7 @@
     </header>
     <div class="con">
 
+        <form action="/action_page.php">
         <div class="brd">
             <div class="container">
                 <div class="box">
@@ -403,6 +415,16 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="box">
+            <div class="but">
+                <input type="submit" value="Submit">
+                <input type="button" value="Cancel" src="index.html"></div>
+        </div>
+    </div>
+
+    <br><br>
+</form>
     </div>
 	<video id="vbg" autoplay loop muted poster="">
 		<source src="media/vbg.mp4" type="video/mp4">
