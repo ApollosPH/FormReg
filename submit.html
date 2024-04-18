@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="media/logo.png">
+    <link rel="stylesheet" href="modal.css">
+    <title>FORM - SUBMIT</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #fff;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: aqua;
+        }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            a {
+                text-decoration: none;
+            }
+            .con {
+                border: 2px solid #000;
+				margin: 50px 75px 50px 75px;
+            }
+			.container {
+				padding: 0 50px 0 50px;
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+				justify-content: center;
+			}
+            @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            .con {
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                }
+            }
+			.box {
+				margin: auto;
+                padding: 0 5px 0 5px;
+                justify-content: center;
+                color: #000;
+			}
+            img {
+                width: 150px;
+            }
+            .brd {
+                border-bottom: 4px double #000;
+                margin: 0 50px 15px 50px;
+            }
+            .brd1 {
+                border-top: 2px solid #000;
+                border-left: 2px solid #000;
+                border-right: 2px solid #000;
+                border-bottom: 4px double #000;
+                margin: 15px 50px 0 50px;
+            }
+            .brd2 {
+                border-bottom: 2px solid #000;
+                border-left: 2px solid #000;
+                border-right: 2px solid #000;
+                margin: 0 50px 0 50px;
+            }
+            .tab {
+                display: inline-flex;
+            }
+            .text {
+                text-align: center;
+                padding: 5px;
+                color: #000;
+            }
+            .text1 {
+                text-align: left;
+            }
+            .text2 {
+                margin: 0 50px 0 50px;
+            }
+            .text3 {
+                margin: 0;
+            }
+            .text4 {
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="formDataA">
+
+        </div>
+
+    </div>
+</div>
+
+    <div class="con">
+
+        <div class="brd">
+        <div class="container">
+            <div class="box">
+                <div class="img">
+                    <img src="media/logo.png">
+                </div>
+            </div>
+            <div class="box">
+                <div class="text4">
+                    <h2>St. Louis College Valenzuela</h2>
+                    <p>#005 Maysan Road, Valenzuela City, Metro Manila, Philippines 1440</p>
+                    <p>Tel. Nos. 292-0481; E-mail: slcv@vasia.com; FB page: slvcollege</p>
+                    <h2>COLLEGE DEPARTMENT</h2>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <div class="text">
+                    <h1>APPLICATION FOR ADMISSION</h1></div>
+                <div class="text4">
+                    <h3>S. Y. 2024 - 2025</h3><br></div>
+            </div>
+        </div>
+
+        <div class="text2">
+            <div class="box">
+                <div class="text1">
+                    <div class="tab">
+                        <div id="formDataB">
+
+                        </div>
+                        </div><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="brd1">
+            <div class="container">
+                <div class="box">
+                    <div class="text">
+                        <h3>ACADEMIC INFORMATION</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="brd2">
+            <div class="container">
+            <div class="text3">
+                <div class="box">
+                    <div class="text1"><br>
+                        <p>Last High School Attended</p>
+                        <div id="formDataC">
+
+                        </div>
+                        <br>
+                        <div id="formDataD">
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div></div>
+        </div>
+
+        <div class="brd1">
+            <div class="container">
+                <div class="box">
+                    <div class="text">
+                        <h3>PERSONAL INFORMATION</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="brd2">
+            <div class="container">
+                <div class="box">
+                    <div class="text1">
+                        <div id="formDataE">
+
+                        </div>
+                        <div id="csData">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text1"><br>
+                        <div id="genderData">
+
+                        </div>
+                        <div id="formDataF">
+
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <div class="brd1">
+            <div class="container">
+                <div class="box">
+                    <div class="text">
+                        <h4>Documents Submitted:</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="brd2">
+            <div class="container">
+                <div class="box">
+                    <div class="text1"><br>
+                        <div id="documentData">
+
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container">
+            <div class="box">
+                <button
+                style="padding: 10px 50px 10px 50px;
+                font-size: medium;
+                font-weight: bold;" onclick="printFormData()">Print Form Data</button>
+                <button
+                style="padding: 10px 50px 10px 50px;
+                font-size: medium;
+                font-weight: bold;" onclick="location.href='index.html'">Back</button>
+            </div>
+        </div>
+        <br>
+
+        </div>
+        <script>
+    function getUrlParameter(lname) {
+        lname = lname.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + lname + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+    function getUrlParameter(fname) {
+        fname = fname.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + fname + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+    function getUrlParameter(mname) {
+        mname = mname.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + mname + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    var lname = getUrlParameter('lname');
+    var fname = getUrlParameter('fname');
+    var mname = getUrlParameter('mname');
+    var as = getUrlParameter('as');
+    var ca = getUrlParameter('ca');
+    var schname = getUrlParameter('schname');
+    var schyear = getUrlParameter('schyear');
+    var schyear1 = getUrlParameter('schyear1');
+    var schadd = getUrlParameter('schadd');
+    var senhightrack = getUrlParameter('senhightrack');
+    var hongrad = getUrlParameter('hongrad');
+    var coluniv = getUrlParameter('coluniv');
+    var course = getUrlParameter('course');
+    var schys = getUrlParameter('schys');
+    var preadd = getUrlParameter('preadd');
+    var connum = getUrlParameter('connum');
+    var datbir = getUrlParameter('datbir');
+    var religion = getUrlParameter('religion');
+    var cs = getUrlParameter('cs');
+    var gender = getUrlParameter('gender');
+    var email = getUrlParameter('email');
+    var plabir = getUrlParameter('plabir');
+    var nationl = getUrlParameter('nationl');
+    var occup = getUrlParameter('occup');
+    var documents = getUrlParameter('ds');
+
+    var formDataA = document.getElementById('formDataA');
+    formDataA.innerHTML = "<h3>Thank you for submitting your details, Mr. " + lname + "</h3>";
+
+    var formDataB = document.getElementById('formDataB');
+    formDataB.innerHTML = "<h3>Name: " + lname + ", " + fname + " " + mname + "</h3>"
+                        + "<h3>Application Status: " + as + "</h3>" + "<h3>Course Applied For: " + ca + "</h3>";
+
+    var formDataC = document.getElementById('formDataC');
+    formDataC.innerHTML = "<h3>School Name: " + schname + "</h3>" +
+                        "<h3>School Year: " + schyear + "-" + schyear1 + "</h3>" +
+                        "<h3>School Address: " + schadd + "</h3>" +
+                        "<h3>Senior High School Track: " + senhightrack + "</h3>" +
+                        "<h3>Honors Received during Graduation <i>(if any)</i>: " + hongrad + "</h3>";
+
+    var formDataD = document.getElementById('formDataD');
+    formDataD.innerHTML = "<h3>College/University <i>(if transferee)</i>: " + coluniv + "</h3>" +
+                        "<h3>Course: " + course + "</h3>" +
+                        "<h3>School Year & Semester: " + schys + "</h3>";
+
+    var formDataE = document.getElementById('formDataE');
+    formDataE.innerHTML = "<h3>Present Address: " + preadd + "</h3>" +
+                        "<h3>Contact Number: " + connum + "</h3>" +
+                        "<h3>Date of Birth: " + datbir + "</h3>" +
+                        "<h3>Religion: " + religion + "</h3>";
+
+    var formDataF = document.getElementById('formDataF');
+    formDataF.innerHTML = "<h3>Email: " + email + "</h3>" +
+                        "<h3>Place of Birth: " + plabir + "</h3>" +
+                        "<h3>Nationality: " + nationl + "</h3>" +
+                        "<h3>Occupation: " + occup + "</h3>";
+
+    var csDataDiv = document.getElementById('csData');
+    if (cs === 'Single') {
+        csDataDiv.innerHTML = "<h3>Civil Status: Single</h3>";
+    } else if (cs === 'Married') {
+        csDataDiv.innerHTML = "<h3>Civil Status: Married</h3>";
+    } else if (cs === 'Divorced') {
+        csDataDiv.innerHTML = "<h3>Civil Status: Divorced</h3>";
+    } else if (cs === 'Widowed') {
+        csDataDiv.innerHTML = "<h3>Civil Status: Widowed</h3>";
+    } else {
+        csDataDiv.innerHTML = "<h3>Civil Status: </h3>";
+    }
+
+    var genderDataDiv = document.getElementById('genderData');
+    if (gender === 'Male') {
+        genderDataDiv.innerHTML = "<h3>Gender: Male</h3>";
+    } else if (gender === 'Female') {
+        genderDataDiv.innerHTML = "<h3>Gender: Female</h3>";
+    } else {
+        genderDataDiv.innerHTML = "<h3>Gender: </h3>";
+    }
+
+    window.onload = function() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var selectedOptions = urlParams.getAll('ds');
+
+    var documentData = "";
+
+    selectedOptions.forEach(function(option) {
+        documentData += option + "<br>";
+    });
+
+    document.getElementById("documentData").innerHTML = documentData;
+};
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

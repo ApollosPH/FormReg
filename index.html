@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="media/logo.png">
     <title>FORM</title>
     <style>
-            html {
-                overflow: scroll;
-                overflow-x: hidden;
-            }
-            ::-webkit-scrollbar {
-                width: 0;
-                background: transparent;
-            }
-            ::-webkit-scrollbar-thumb {
-                background: #FF0000;
-            }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #fff;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: aqua;
+        }
             #vbg {
                 width: 100vw;
                 height: 100vh;
@@ -159,6 +161,10 @@
             .but {
                 margin-top: 15px;
             }
+            label {
+                font-size:medium ;
+                font-weight: bold;
+            }
     </style>
 </head>
 <body>
@@ -170,7 +176,6 @@
     </header>
     <div class="con">
 
-    <form action="/action_page.php">
     <div class="brd">
     <div class="container">
         <div class="box">
@@ -198,12 +203,16 @@
         </div>
     </div>
 
+    <form action="submit.html" method="get">
     <div class="text2">
         <div class="box">
             <div class="text1">
-                <div class="tab"><h3>Last Name:</h3><input type="text" /><h3>First Name:</h3><input type="text" /><h3>Middle Name:</h3><input type="text" /></div>
+                <div class="tab">
+                <label for="lname">Last Name:</label><input type="text" id="lname" name="lname" required>
+                <label for="fname">First Name:</label><input type="text" id="fname" name="fname" required>
+                <label for="mname">Middle Name:</label><input type="text" id="mname" name="mname" required></div>
                 <div class="tab"><h3>Application Status:</h3>
-                    <label for="asA"><input type="radio" name="as" value="FirstYear"/> Incoming First Year</label>
+                    <label for="asA"><input type="radio" name="as" value="Incoming First Year"/> Incoming First Year</label>
                     <label for="asB"><input type="radio" name="as" value="Transferee"/> Transferee</label></div>
                 <h3>Course Applied For:</h3>
             </div>
@@ -215,16 +224,16 @@
             <div class="text">
                 <h2 class="ul">BACHELOR's DEGREE (4 YEARS)</h2></div>
             <div class="text1">
-                <label for="bdA"><input type="radio" name="bd" value="BSAIS"/> Bachelor of Science in Accounting Information System (BSAIS)</label><br>
-                <label for="bdB"><input type="radio" name="bd" value="BSBA-FM"/> Bachelor of Science in Business Administration - Major in Financial Management (BSBA-FM)</label><br>
-                <label for="bdC"><input type="radio" name="bd" value="BSBA-HRM"/> Bachelor of Science in Business Administration - Major in Human Resource Management (BSBA-HRM)</label><br>
-                <label for="bdD"><input type="radio" name="bd" value="BSBA-MM"/> Bachelor of Science in Business Administration - Major in Marketing Management (BSBA-MM)</label><br>
-                <label for="bdE"><input type="radio" name="bd" value="BSCS"/> Bachelor of Science in Computer Science (BSCS)</label><br>
-                <label for="bdF"><input type="radio" name="bd" value="BSHM"/> Bachelor of Science in Hospitality Management (BSHM)</label><br>
-                <label for="bdG"><input type="radio" name="bd" value="BSOA"/> Bachelor of Science in Office Administration (BSOA)</label><br>
-                <label for="bdH"><input type="radio" name="bd" value="BECEd"/> Bachelor of Early Childhood Education (BECEd)</label><br>
-                <label for="bdI"><input type="radio" name="bd" value="BTVTEd-HRs"/> Bachelor of Technical-Vocational Teacher Education Major in Hotel & Restaurant Services (BTVTEd-HRs)</label><br>
-                <label for="bdJ"><input type="radio" name="bd" value="BTVTEd-CPG"/> Bachelor of Technical-Vocational Teacher Education Major in Computer Programming (BTVTEd-CPG)</label>
+                <label for="caA"><input type="radio" name="ca" value="Bachelor of Science in Accounting Information System (BSAIS)"/> Bachelor of Science in Accounting Information System (BSAIS)</label><br>
+                <label for="caB"><input type="radio" name="ca" value="Bachelor of Science in Business Administration - Major in Financial Management (BSBA-FM)"/> Bachelor of Science in Business Administration - Major in Financial Management (BSBA-FM)</label><br>
+                <label for="caC"><input type="radio" name="ca" value="Bachelor of Science in Business Administration - Major in Human Resource Management (BSBA-HRM)"/> Bachelor of Science in Business Administration - Major in Human Resource Management (BSBA-HRM)</label><br>
+                <label for="caD"><input type="radio" name="ca" value="Bachelor of Science in Business Administration - Major in Marketing Management (BSBA-MM)"/> Bachelor of Science in Business Administration - Major in Marketing Management (BSBA-MM)</label><br>
+                <label for="caE"><input type="radio" name="ca" value="Bachelor of Science in Computer Science (BSCS)"/> Bachelor of Science in Computer Science (BSCS)</label><br>
+                <label for="caF"><input type="radio" name="ca" value="Bachelor of Science in Hospitality Management (BSHM)"/> Bachelor of Science in Hospitality Management (BSHM)</label><br>
+                <label for="caG"><input type="radio" name="ca" value="Bachelor of Science in Office Administration (BSOA)"/> Bachelor of Science in Office Administration (BSOA)</label><br>
+                <label for="caH"><input type="radio" name="ca" value="Bachelor of Early Childhood Education (BECEd)"/> Bachelor of Early Childhood Education (BECEd)</label><br>
+                <label for="caI"><input type="radio" name="ca" value="Bachelor of Technical-Vocational Teacher Education Major in Hotel & Restaurant Services (BTVTEd-HRs)"/> Bachelor of Technical-Vocational Teacher Education Major in Hotel & Restaurant Services (BTVTEd-HRs)</label><br>
+                <label for="caJ"><input type="radio" name="ca" value="Bachelor of Technical-Vocational Teacher Education Major in Computer Programming (BTVTEd-CPG)"/> Bachelor of Technical-Vocational Teacher Education Major in Computer Programming (BTVTEd-CPG)</label>
             </div>
         </div>
     </div>
@@ -234,8 +243,8 @@
             <div class="text">
                 <h2 class="ul">ASSOCIATE PROGRAM (2 YEARS)</h2></div>
             <div class="text1">
-                <label for="apA"><input type="radio" name="ap" value="Ladderized_to_BSCS"/> Associate in Computer Technology (Ladderized to BSCS)</label><br>
-                <label for="apB"><input type="radio" name="ap" value="Caregiving"/> Associate in Health Services (Caregiving)</label>
+                <label for="caK"><input type="radio" name="ca" value="Ladderized_to_BSCS"/> Associate in Computer Technology (Ladderized to BSCS)</label><br>
+                <label for="caL"><input type="radio" name="ca" value="Caregiving"/> Associate in Health Services (Caregiving)</label>
                 <p></p>
                 <p></p>
             </div>
@@ -258,14 +267,14 @@
             <div class="box">
                 <div class="text1"><br>
                     <p>Last High School Attended</p>
-                    <div class="tab"><h3>School Name:</h3><input type="text" /></div><br>
-                    <div class="tab"><h3>School Year:</h3><input type="number" placeholder="YYYY" min="2000" max="2024">-<input type="number" placeholder="YYYY" min="2001" max="2025"></div><br>
-                    <div class="tab"><h3>School Address:</h3><input type="text" /></div><br>
-                    <div class="tab"><h3>Senior High School Track:</h3><input type="text" /></div>
-                    <div class="tab"><h3>Honors Received during Graduation <i>(if any)</i>:</h3><input type="text" /></div><br><br>
-                    <div class="tab"><h3>College/University <i>(if transferee)</i>:</h3><input type="text" /></div><br>
-                    <div class="tab"><h3>Course:</h3><input type="text" /></div><br>
-                    <div class="tab"><h3>School Year & Semester:</h3><input type="text" /></div>
+                    <div class="tab"><label for="schname">School Name:</label><input type="text" name="schname" required/></div><br>
+                    <div class="tab"><label>School Year:</label><input type="number" name="schyear" placeholder="YYYY" min="2000" max="2024">-<input type="number" name="schyear1" placeholder="YYYY" min="2001" max="2025"></div><br>
+                    <div class="tab"><label for="schadd">School Address:</label><input type="text" name="schadd"/></div><br>
+                    <div class="tab"><label for="senhightrack">Senior High School Track:</label><input type="text" name="senhightrack"/></div>
+                    <div class="tab"><label for="hongrad">Honors Received during Graduation <i>(if any)</i>:</label><input type="text" name="hongrad"/></div><br><br>
+                    <div class="tab"><label for="coluniv">College/University <i>(if transferee)</i>:</label><input type="text" name="coluniv"/></div><br>
+                    <div class="tab"><label for="course">Course:</label><input type="text" name="course"/></div><br>
+                    <div class="tab"><label for="schys">School Year & Semester:</label><input type="text" name="schys"/></div>
                 </div>
                 <br>
             </div>
@@ -276,7 +285,7 @@
         <div class="container">
             <div class="box">
                 <div class="text">
-                    <h3>PERSONAL INFORMATION</h3>
+                    <label>PERSONAL INFORMATION</label>
                 </div>
             </div>
         </div>
@@ -286,13 +295,13 @@
         <div class="container">
             <div class="box">
                 <div class="text1">
-                    <div class="tab"><h3>Present Address:</h3><input type="text" /></div><br>
-                    <div class="tab"><h3>Contact Number:</h3><input type="number" /></div>
-                    <div class="tab"><h3>Date of Birth:</h3><input type="date" /></div>
-                    <div class="tab"><h3>Religion:</h3><input type="text" /></div><br>
+                    <div class="tab"><label for="preadd">Present Address:</label><input type="text" name="preadd" required/></div><br>
+                    <div class="tab"><label for="connum">Contact Number:</label><input type="number" name="connum"/></div>
+                    <div class="tab"><label for="datbir">Date of Birth:</label><input type="date" name="datbir"/></div>
+                    <div class="tab"><label for="religion">Religion:</label><input type="text" name="religion"/></div><br>
 
-                    <div class="tab"><h3>Civil Status:</h3>
-                        <select id="civsta">
+                    <div class="tab"><label for="cs">Civil Status:</label><br>
+                        <select id="cs" name="cs">
                             <option value="Single">Single</option>
                             <option value="Married">Married</option>
                             <option value="Divorced">Divorced</option>
@@ -303,17 +312,17 @@
             </div>
             <div class="box">
                 <div class="text1"><br>
-                    <div class="tab"><h3>Gender:</h3>
-                        <select id="gender">
+                    <div class="tab"><label>Gender:</label>
+                        <select id="gender" name="gender">
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                         </select>
                     </div><br>
-                    <div class="tab"><h3>E-mail:</h3><input type="text" /></div><br>
-                    <div class="tab"><h3>Place of Birth:</h3><input type="text" /></div>
-                    <div class="tab"><h3>Nationality:</h3><input type="text" /></div><br>
-                    <div class="tab"><h3>Occupation:</h3>
-                        <select id="occ">
+                    <div class="tab"><label for="email">E-mail:</label><input type="text" name="email"/></div><br>
+                    <div class="tab"><label for="plabir">Place of Birth:</label><input type="text" name="plabir"/></div>
+                    <div class="tab"><label for="nationl">Nationality:</label><input type="text" name="nationl"/></div><br>
+                    <div class="tab"><label for="occup">Occupation:</label>
+                        <select id="occup" name="occup">
                             <option value="None">None</option>
                             <option value="Part-time">Part-time</option>
                             <option value="Full-time">Full-time</option>
@@ -339,18 +348,18 @@
         <div class="container">
             <div class="box">
                 <div class="text1">
-                    <div class="tab"><label for="dsA"><input type="checkbox" name="ds" value="FORM138/137"/> High School Report Card (Form 138/137)</label></div>
-                    <div class="tab"><label for="dsB"><input type="checkbox" name="ds" value="TOR/COG"/> Transcript of Record/Certificate of Grades</label></div><br>
-                    <div class="tab"><label for="dsC"><input type="checkbox" name="ds" value="COGMC"/> Certificate of Good Moral Character</label></div><br>
-                    <div class="tab"><label for="dsD"><input type="checkbox" name="ds" value="HOD"/> Honorable Dismissal</label></div><br>
+                    <div class="tab"><label for="dsA"><input type="checkbox" name="ds" value="High School Report Card (Form 138/137)"/> High School Report Card (Form 138/137)</label></div>
+                    <div class="tab"><label for="dsB"><input type="checkbox" name="ds" value="Transcript of Record/Certificate of Grades"/> Transcript of Record/Certificate of Grades</label></div><br>
+                    <div class="tab"><label for="dsC"><input type="checkbox" name="ds" value="Certificate of Good Moral Character"/> Certificate of Good Moral Character</label></div><br>
+                    <div class="tab"><label for="dsD"><input type="checkbox" name="ds" value="Honorable Dismissal"/> Honorable Dismissal</label></div><br>
                 </div>
             </div>
             <div class="box">
                 <div class="text1"><br>
-                    <div class="tab"><label for="dsA"><input type="checkbox" name="ds" value="FORM138/137"/> Certificate of Honor</label></div><br>
-                    <div class="tab"><label for="dsB"><input type="checkbox" name="ds" value="TOR/COG"/> Copy of Birth Certificate</label></div><br>
-                    <div class="tab"><label for="dsC"><input type="checkbox" name="ds" value="COGMC"/> X-ray Report/Medical Certificate</label></div>
-                    <div class="tab"><label for="dsD"><input type="checkbox" name="ds" value="HOD"/> 2 pcs. 2x2 colored photo with white background</label></div><br><br>
+                    <div class="tab"><label for="dsE"><input type="checkbox" name="ds" value="Certificate of Honor"/> Certificate of Honor</label></div><br>
+                    <div class="tab"><label for="dsF"><input type="checkbox" name="ds" value="Copy of Birth Certificate"/> Copy of Birth Certificate</label></div><br>
+                    <div class="tab"><label for="dsG"><input type="checkbox" name="ds" value="X-ray Report/Medical Certificate"/> X-ray Report/Medical Certificate</label></div>
+                    <div class="tab"><label for="dsH"><input type="checkbox" name="ds" value="2 pcs. 2x2 colored photo with white background"/> 2 pcs. 2x2 colored photo with white background</label></div><br><br>
                 </div>
             </div>
         </div>
@@ -360,12 +369,12 @@
                 <div class="box">
                     <div class="but">
                         <input type="submit" value="Submit">
-                        <input type="button" value="Cancel" src="index.html"></div>
+                        <a href="index.html"><input type="button" value="Cancel"></a></div></form>
                 </div>
             </div>
 
     <br><br>
-</form>
+
     </div>
 	<video id="vbg" autoplay loop muted poster="">
 		<source src="media/vbg.mp4" type="video/mp4">

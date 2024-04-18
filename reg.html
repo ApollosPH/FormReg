@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORM</title>
+    <link rel="website icon" type="png" href="media/logo.png">
+    <title>REGISTER</title>
     <style>
-            html {
-                overflow: scroll;
-                overflow-x: hidden;
-            }
-            ::-webkit-scrollbar {
-                width: 0;
-                background: transparent;
-            }
-            ::-webkit-scrollbar-thumb {
-                background: #FF0000;
-            }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #fff;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: aqua;
+        }
             #vbg {
                 width: 100vw;
                 height: 100vh;
@@ -163,7 +165,7 @@
     </header>
     <div class="con">
 
-        <form action="/action_page.php">
+        <form action="submitreg.html" method="get">
         <div class="brd">
             <div class="container">
                 <div class="box">
@@ -227,45 +229,45 @@
     <div class="text2">
         <div class="box">
             <div class="text1"><br>
-                <div class="tab"><h3>Last Name:</h3><input type="text" /><h3>First Name:</h3><input type="text" /><h3>Middle Name:</h3><input type="text" /></div>
-                <div class="tab"><h3>Sex:</h3><input type="text" /></div>
-                <div class="tab"><h3>Civil Status:</h3><input type="text" /></div>
-                <div class="tab"><h3>Nationality:</h3><input type="text" /></div>
-                <div class="tab"><h3>Religion:</h3><input type="text" /></div>
-                <div class="tab"><h3>Contact Number:</h3><input type="text" /></div><br>
-                <div class="tab"><h3>Age:</h3><input type="text" /></div>
-                <div class="tab"><h3>Date of Birth:</h3><input type="date" /></div>
-                <div class="tab"><h3>Place of Birth:</h3><input type="text" /></div><br>
-                <div class="tab"><h3>City Address:</h3><input type="text" /></div><br>
-                <div class="tab"><h3>Provincial Address:</h3><input type="text" /></div><br><br>
+                <div class="tab"><h3>Last Name:</h3><input type="text" name="lname" required/><h3>First Name:</h3><input type="text" name="fname" required/><h3>Middle Name:</h3><input type="text" name="mname" required/></div>
+                <div class="tab"><h3>Sex:</h3><input type="text" name="sex"/></div>
+                <div class="tab"><h3>Civil Status:</h3><input type="text" name="cs"/></div>
+                <div class="tab"><h3>Nationality:</h3><input type="text" name="nationl"/></div>
+                <div class="tab"><h3>Religion:</h3><input type="text" name="religion"/></div>
+                <div class="tab"><h3>Contact Number:</h3><input type="text" name="connum"/></div><br>
+                <div class="tab"><h3>Age:</h3><input type="text" name="age"/></div>
+                <div class="tab"><h3>Date of Birth:</h3><input type="date" name="datbir"/></div>
+                <div class="tab"><h3>Place of Birth:</h3><input type="text" name="plabir"/></div><br>
+                <div class="tab"><h3>City Address:</h3><input type="text" name="citadd"/></div><br>
+                <div class="tab"><h3>Provincial Address:</h3><input type="text" name="proadd"/></div><br><br>
 
-                <div class="tab"><h3>Father's Name:</h3><input type="text" /></div>
-                <div class="tab"><h3>Occupation:</h3><input type="text" /></div><br>
-                <div class="tab"><h3>Mother's Name:</h3><input type="text" /></div>
-                <div class="tab"><h3>Occupation:</h3><input type="text" /></div><br>
+                <div class="tab"><h3>Father's Name:</h3><input type="text" name="fatname"/></div>
+                <div class="tab"><h3>Occupation:</h3><input type="text" name="foccup"/></div><br>
+                <div class="tab"><h3>Mother's Name:</h3><input type="text" name="motname"/></div>
+                <div class="tab"><h3>Occupation:</h3><input type="text" name="moccup"/></div><br>
 
-                <div class="tab"><h3>EMERGENCY 24/7 PARENT'S NUMBER:</h3><input type="number" /></div><br>
+                <div class="tab"><h3>EMERGENCY 24/7 PARENT'S NUMBER:</h3><input type="number" name="emernum"/></div><br>
                 <div class="tab"><h3>Tuition paid by:</h3>
                     <label for="tpA"><input type="radio" name="tp" value="Student"/> Student</label>
-                    <label for="tpB"><input type="radio" name="tp" value="Parent"/> Transferee</label>
-                    <label for="tpC"><input type="radio" name="tp" value="Sponsor"/> Sponsor</label><input type="text" /></div><br><br>
+                    <label for="tpB"><input type="radio" name="tp" value="Parent"/> Parent</label>
+                    <label for="tpC"><input type="radio" name="tp" value="Sponsor"/> Sponsor</label><input type="text" name="sponsor"/></div><br><br>
 
-                    <div class="tab"><h3>Elementary Course Completed at:</h3><input type="text" /></div>
-                    <div class="tab"><h3>Year Graduated:</h3><input type="number" placeholder="YYYY" min="2000" max="2025"></div><br>
-                    <div class="tab"><h3>Junior High School Completed at:</h3><input type="text" /></div>
-                    <div class="tab"><h3>Year Graduated:</h3><input type="number" placeholder="YYYY" min="2000" max="2025"></div><br>
-                    <div class="tab"><h3>Senior High School Completed at:</h3><input type="text" /></div>
-                    <div class="tab"><h3>Year Graduated:</h3><input type="number" placeholder="YYYY" min="2000" max="2025"></div><br>
-                    <div class="tab"><h3>School Last attended <i>(if Transferee)</i>:</h3><input type="text" /></div>
-                    <div class="tab"><h3>Year:</h3><input type="number" placeholder="YYYY" min="2000" max="2025"></div><br><br>
+                    <div class="tab"><h3>Elementary Course Completed at:</h3><input type="text" name="elem"/></div>
+                    <div class="tab"><h3>Year Graduated:</h3><input type="number" name="elemyg" placeholder="YYYY" min="2000" max="2025"></div><br>
+                    <div class="tab"><h3>Junior High School Completed at:</h3><input type="text" name="junior"/></div>
+                    <div class="tab"><h3>Year Graduated:</h3><input type="number" name="junioryg" placeholder="YYYY" min="2000" max="2025"></div><br>
+                    <div class="tab"><h3>Senior High School Completed at:</h3><input type="text" name="senior"/></div>
+                    <div class="tab"><h3>Year Graduated:</h3><input type="number" name="senioryg" placeholder="YYYY" min="2000" max="2025"></div><br>
+                    <div class="tab"><h3>School Last attended <i>(if Transferee)</i>:</h3><input type="text" name="schla"/></div>
+                    <div class="tab"><h3>Year:</h3><input type="number" name="schlayg" placeholder="YYYY" min="2000" max="2025"></div><br><br>
 
                     <div class="text1">
                         <h3>Credential Submitted: (Pls. Check only)</h3>
-                        <label for="bdA"><input type="checkbox" name="bd" value="BSAIS"/> Honorable Dismissal</label><br>
-                        <label for="bdB"><input type="checkbox" name="bd" value="BSBA-FM"/> Transcript of Records</label><br>
-                        <label for="bdC"><input type="checkbox" name="bd" value="BSBA-HRM"/> ACR No.<input type="number" /></label><br>
-                        <label for="bdD"><input type="checkbox" name="bd" value="BSBA-MM"/> Recognition/Naturalization Paper</label><br>
-                        <label for="bdE"><input type="checkbox" name="bd" value="BSCS"/> Study-Permit</label><br><br>
+                        <label for="csA"><input type="checkbox" name="cs" value="Honorable Dismissal"/> Honorable Dismissal</label><br>
+                        <label for="csB"><input type="checkbox" name="cs" value="Transcript of Records"/> Transcript of Records</label><br>
+                        <label for="csC"><input type="checkbox" name="cs" value="ACR No."/> ACR No.<input type="number" name="acrnum"/></label><br>
+                        <label for="csD"><input type="checkbox" name="cs" value="Recognition/Naturalization Paper"/> Recognition/Naturalization Paper</label><br>
+                        <label for="csE"><input type="checkbox" name="cs" value="Study-Permit"/> Study-Permit</label><br><br>
                     </div>
                     <div class="ple">
                         <h3>PLEDGE</h3><br>
@@ -276,7 +278,7 @@
                         </p>
                         <br>
                         <div class="text3">
-                        <input type="text" /></div>
+                        <input type="text" name="studsig"/></div>
                         <p style="text-align: right; padding-top: 3px;"><i>Student's Signature</i></p>
                     </div>
                 </div>
@@ -289,15 +291,15 @@
             <div class="text3">
                 <h2 style="color: aqua;">REGISTRATION CARD</h2></div><br>
                 <div class="text3">
-                    <div class="tab"><h3>Student Number:</h3><input type="number" /></div>
-                    <div class="tab"><h3>Date:</h3><input type="date" /></div>
+                    <div class="tab"><h3>Student Number:</h3><input type="number" name="studnum"/></div>
+                    <div class="tab"><h3>Date:</h3><input type="date" name="regdate"/></div>
                 <div class="text1"><br>
-                <div class="tab"><h3>Last Name:</h3><input type="text" /><h3>First Name:</h3><input type="text" /><h3>Middle Name:</h3><input type="text" /></div>
+                <div class="tab"><h3>Last Name:</h3><input type="text" name="rclname" required/><h3>First Name:</h3><input type="text" name="rcfname" required/><h3>Middle Name:</h3><input type="text" name="rcmname" required/></div>
                 <div class="tab">
                     <label for="semA"><input type="radio" name="sem" value="Sem1"/> 1st Sem</label>
                     <label for="semB"><input type="radio" name="sem" value="Sem2"/> 2nd Sem</label>
                     <label for="semC"><input type="radio" name="sem" value="Summer"/> Summer</label></div>
-                    <div class="tab"><h3>Course:</h3><input type="text" /></div>
+                    <div class="tab"><h3>Course:</h3><input type="text" name="regcourse"/></div>
                     <div class="tab">
                         <h3>C.Y.</h3>
                         <input type="number" placeholder="YYYY" min="2000" max="2024">-<input type="number" placeholder="YYYY" min="2001" max="2025"></div><br>
@@ -326,53 +328,53 @@
                                     <th>Units</th>
                                 </tr>
                                 <tr>
-                                    <td>1. CF 2 PODV</td>
+                                    <td>1. </td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td>1.5</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
-                                    <td>2. COMP2</td>
+                                    <td>2. </td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td>2/2</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
-                                    <td>3. BAC5 RSCH</td>
+                                    <td>3. </td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td>3</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
-                                    <td>4. MMEL3 CBEH</td>
+                                    <td>4. </td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td>3</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
-                                    <td>5. MM7 PRIC [Tutorial]</td>
+                                    <td>5. </td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td>3</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
-                                    <td>6. GE8 ETHC [Tutorial]</td>
+                                    <td>6. </td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td>3</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
-                                    <td>7. BACS THFS [Tutorial]</td>
+                                    <td>7. </td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td>3</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <td>8. </td>
@@ -400,14 +402,14 @@
                                     <td></td>
                                     <td></td>
                                     <td>Total Regular:</td>
-                                    <td>11.5</td>
+                                    <td>0</td>
                                 </tr>
                                 <tr>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td>Total Tutorial:</td>
-                                    <td>9</td>
+                                    <td>0</td>
                                 </tr>
                             </table><br><br>
                     </div>
@@ -419,7 +421,7 @@
         <div class="box">
             <div class="but">
                 <input type="submit" value="Submit">
-                <input type="button" value="Cancel" src="index.html"></div>
+                <a href="reg.html"><input type="button" value="Cancel"></a></div>
         </div>
     </div>
 
